@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Maze</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js">
+    </script>
+  </head>
+  <body>
+    <h1>MAZE</h1>
+    <div class="canvas-container">
+      <div id="start-modal" class="start-modal">
+        <h2>CHOOSE A SIZE TO START</h2>
+      </div>
+      <div class="keys">
+        <h4>MOVEMENT</h4>
+        <div>
+          <span class="key w-key">W</span>
+        </div>
+        <div class="key-row">
+          <span class="key row-key">A</span>
+          <span class="key row-key">S</span>
+          <span class="key row-key">D</span>
+        </div>
+        <h4>TOGGLE HINT</h4>
+        <div>
+          <span class="key w-key">H</span>
+        </div>
+        <h4>TOGGLE SOLUTION</h4>
+        <div>
+          <span class="key w-key">P</span>
+        </div>
+        <h4>TOGGLE BREADCRUMB</h4>
+        <div>
+          <span class="key w-key">B</span>
+        </div>
+        <h4>TOGGLE SCORE</h4>
+        <div>
+          <span class="key w-key">Y</span>
+        </div>
+      </div>
+      <div class="main-menu">
+        <h4>NEW GAME</h4>
+        <div>
+          <button id="5-by-5" class="start-game">5 X 5</button>
+        </div>
+        <div>
+          <button id="10-by-10" class="start-game">10 X 10</button>
+        </div>
+        <div>
+          <button id="15-by-15" class="start-game">15 X 15</button>
+        </div>
+        <div>
+          <button id="20-by-20" class="start-game">20 X 20</button>
+        </div>
+        <h4>HIGH SCORES</h4>
+        <div id="high-score-container" class="high-scores">
+          -
+        </div>
+      </div>
+      <div>
+        <span id="score">SCORE: </span>
+        <span id="timer">0:00</span>
+      </div>
+      <canvas id="main-canvas" width="1000" height="1000"></canvas>
+      <div class="credits">CREATED BY: JOSEPH DITTON</div>
+    </div>
+    <script src="./jd_canvas_api.js"></script>
+    <script src="./game_engine.js"></script>
+    <script src="./maze_utils.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
